@@ -24,6 +24,10 @@ $color-active: #eabdfa;
 
   span {
     font-size: inherit;
+
+    &:empty {
+      display: none;
+    }
   }
 
   &:hover {

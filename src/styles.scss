@@ -14,7 +14,7 @@ body {
     font-family: "Lexend", system-ui;
   }
 
-  h1 {
+  h1,h2 {
     margin: 0;
   }
 
@@ -40,8 +40,7 @@ app-root {
   flex-direction: column;
 
   @media (max-width: 768px) {
-    padding: 12px;
-    row-gap: 12px;
+    padding-top: 12px;
   }
 
   .page .app-page-home {
@@ -78,7 +77,7 @@ app-root {
     small {
       pointer-events: none;
       position: absolute;
-      right: 24px;
+      right: 16px;
       bottom: 12px;
     }
 
@@ -96,6 +95,10 @@ app-root {
       background: transparent;
       background: #28292a;
       box-shadow: 0 0 0 1px rgba(black, .4);
+
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(black, .6);
+      }
     }
   }
 }
@@ -110,9 +113,18 @@ app-root {
     width: 100%;
   }
 
+  svg {
+    width: 100% !important;
+    height: auto !important;
+  }
+
   canvas {
     width: 100% !important;
     height: auto !important;
     object-fit: contain;
   }
+}
+
+app-global-nav {
+  display: contents;
 }

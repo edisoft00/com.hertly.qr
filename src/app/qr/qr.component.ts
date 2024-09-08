@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { QRCodeModule } from 'angularx-qrcode'
+import { QRCodeModule, QRCodeElementType } from 'angularx-qrcode'
 
 @Component({
   selector: 'app-qr',
@@ -10,4 +10,6 @@ import { QRCodeModule } from 'angularx-qrcode'
 })
 export class QrComponent {
   @Input() data!: string
+  @Input() size: number = 2048
+  @Input() type: QRCodeElementType = 'url'
 }
