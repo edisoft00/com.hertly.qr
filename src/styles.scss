@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: #202124;
+
+  &,
+  * {
+    color: white;
+  }
+
+  .material-symbols-rounded {
+    width: 24px;
+    height: 24px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
+}
+
+app-root {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  flex-direction: column;
+}

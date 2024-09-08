@@ -1,0 +1,34 @@
+$color-active: #BA68C8;
+$color-active: #29b6f6;
+$color-active: #eabdfa;
+
+.link {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  row-gap: 6px;
+  column-gap: 6px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgba(white, .7);
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  & * {
+    color: inherit;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: white;
+    transition: 0s;
+    background: rgba(white, .075);
+  }
+
+  &.active {
+    color: $color-active;
+    background: rgba($color-active, .1);
+  }
+}

@@ -1,0 +1,32 @@
+#app-nav {
+  z-index: 999;
+  display: flex;
+  margin: 12px;
+  padding: 12px;
+  width: fit-content;
+  border-radius: 24px;
+  background: #28292a;
+  /* box-shadow: 0 0 0 2px rgba(white, .2); */
+
+  .content {
+    width: 100%;
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+  }
+
+  .links {
+    display: flex;
+    column-gap: 6px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hr {
+    display: flex;
+    width: 1px;
+    height: 24px;
+    margin: 12px 0;
+    background: rgba(white, .5);
+  }
+}
