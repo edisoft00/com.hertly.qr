@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { RouterLink, RouterOutlet } from '@angular/router'
-import { GlobalNavComponent } from "./global/nav/nav.component"
-import { GlobalFooterComponent } from "./global/footer/footer.component"
+import { GlobalNavComponent } from "./_global/nav/nav.component"
+import { GlobalFooterComponent } from "./_global/footer/footer.component"
 
 @Component({
   selector: 'app-root',

@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router'
 
-import { PageHomeComponent } from './page/home/home.component'
-import { PageTextComponent } from './page/text/text.component'
-import { PageLinkComponent } from './page/link/link.component'
-import { PageWifiComponent } from './page/wifi/wifi.component'
-import { PageAboutComponent } from './page/about/about.component'
+import { PageHomeComponent } from './_page/home/home.component'
+import { PageTextComponent } from './_page/text/text.component'
+import { PageLinkComponent } from './_page/link/link.component'
+import { PageWifiComponent } from './_page/wifi/wifi.component'
+import { PageAboutComponent } from './_page/about/about.component'
 
 const siteName = 'Hertly QR'
 
