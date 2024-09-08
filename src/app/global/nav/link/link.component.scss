@@ -13,12 +13,17 @@ $color-active: #eabdfa;
   align-items: center;
   flex-direction: row;
   text-decoration: none;
+  font-size: 1rem;
   color: rgba(white, .7);
   transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   & * {
     color: inherit;
     pointer-events: none;
+  }
+
+  span {
+    font-size: inherit;
   }
 
   &:hover {

@@ -1,1 +1,27 @@
-<p>wifi works!</p>
+<div class="content">
+  <h1>Create Wifi QR code</h1>
+
+  <div class="form" (keyup)="generate()" (change)="generate()">
+    <label class="input-group">
+      <span>SSID:</span>
+      <input type="text" [(ngModel)]="ssid" placeholder="SSID">
+    </label>
+
+    <label class="input-group">
+      <span>Encryption:</span>
+      <select [(ngModel)]="encryption">
+        <option value="">None</option>
+        <option value="WPA">WPA/WPA2 (Most common)</option>
+        <option value="WEP">WEP</option>
+      </select>
+      <small class="material-symbols-rounded">arrow_drop_down</small>
+    </label>
+
+    <label [hidden]="!needPassword" class="input-group">
+      <span>Password:</span>
+      <input type="text" [(ngModel)]="pass" placeholder="Password">
+    </label>
+  </div>
+
+  <qrcode [qrdata]="qrData" [allowEmptyString]="true" [colorDark]="'#fff'" [colorLight]="'#28292a'" [width]="2048" [errorCorrectionLevel]="'Q'" [elementType]="'url'" />
+</div>
