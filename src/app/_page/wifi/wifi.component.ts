@@ -11,8 +11,8 @@ import { QrComponent } from "../../qr/qr.component";
   styleUrl: './wifi.component.scss'
 })
 export class PageWifiComponent {
-  @Input() ssid = ``;
-  @Input() encryption = '';
+  @Input() ssid = '';
+  @Input() encryption = 'WPA';
   @Input() pass = ''
   @Input() qrData = ''
   @Input() needPassword = !(this.encryption === '')

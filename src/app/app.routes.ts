@@ -10,8 +10,8 @@ const title = 'Hertly QR'
 
 export const routes: Routes = [
   { path: '', component: PageHomeComponent, title },
-  { path: 'text', component: PageTextComponent, title: `Text | ${title}` },
-  { path: 'link', component: PageLinkComponent, title: `Link | ${title}` },
-  { path: 'wifi', component: PageWifiComponent, title: `Wifi | ${title}` },
-  { path: 'thanks', component: PageThanksComponent, title: `Thanks | ${title}` }
+  { path: 'text', component: PageTextComponent, title: `${title} | Text` },
+  { path: 'link', component: PageLinkComponent, title: `${title} | Link` },
+  { path: 'wifi', component: PageWifiComponent, title: `${title} | Wifi` },
+  { path: 'thanks', component: PageThanksComponent, title: `${title} | Thanks` }
 ]
