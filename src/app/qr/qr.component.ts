@@ -11,5 +11,5 @@ import { QRCodeModule, QRCodeElementType } from 'angularx-qrcode'
 export class QrComponent {
   @Input() data!: string
   @Input() size: number = 2048
-  @Input() type: QRCodeElementType = 'url'
+  @Input() type: QRCodeElementType = 'svg'
 }
